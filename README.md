@@ -1,6 +1,6 @@
 # NoisyABSA: Domain Generalization on ABSA task via utilizing noisy student architecture
 
-## Intoduction
+## Introduction
 This repository contains the implementation of NoisyABSA, which achieved high domain generalization performance in ABSA tasks. We applied the Noisy Student architecture in the NLP task, specifically Aspect Based Sentiment Analysis. With this approach, our model NoisyABSA surpasses the existing SOTA model and achieves new SOTA in the cross-domain tasks of ABSA.
 
 
@@ -32,5 +32,7 @@ Semi-Cross2 Doamin Task is the same as Semi-Cross1 except that unlabeled data on
 
 ## Model Use
 To use our model, you can follow [NoisyABSA_example](https://github.com/NoisyStudents/NoisyABSA/blob/main/NoisyABSA_example.ipynb).
-You should change the path, dataset and configuration. In the configuration, noisy is injected into the model by adjusting the weight_decay and max_grad_norm.
+This example code is based on cross domain task with default noisy setting (weight_decay=0.01, max_grad_norm=1.0). If you want to test our model on different settings, you should change the dataset and configuration.
+In the configuration, noisy is injected into the model by adjusting the weight_decay and max_grad_norm.
+If you want to change domain tasks, you should change the training and test dataset as you intended.
 
